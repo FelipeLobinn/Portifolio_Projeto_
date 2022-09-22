@@ -19,7 +19,7 @@ $(function () {
         if (pagina == "contato") {
             setTimeout(function () {
                 initialize()
-                //addMarker(-29.071268059050087,-53.847078680992134,1,"Minha casa",undefined,true)
+                addMarker(-29.071268059050087,-53.847078680992134,1,"Minha casa",undefined,true)
             },300)
         }
 
