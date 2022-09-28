@@ -5,7 +5,7 @@
         <div class="banner-overlay"></div> <!--banner-overlay-->
         <div class="bullets"></div> <!--bullets-->
         <div class="center">
-            <form>
+            <form method="POST">
                 <h2>Qual seu melhor email?</h2>
                 <input type="email" name="email" required>
                 <input type="submit" name="acao" value="Cadastrar!">
