@@ -15,7 +15,16 @@
 
     if(isset($_POST['acao'])){
         $usuarioEmail = $_POST['email'];
+        $tipoEmail = 1;
 
-        new Email($usuarioEmail);
+        new Email($tipoEmail,$usuarioEmail);
     };
+    if(isset($_POST['envio'])){
+        $usuarioEmail = $_POST['email'];
+        $usuarioNome = $_POST['nome'];
+        $usuarioMensagem = $_POST['mensagem'];
+        $tipoEmail = 2;
+
+        new Email($tipoEmail,$usuarioEmail,$usuarioNome,$usuarioMensagem);
+    }
 ?>

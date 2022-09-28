@@ -6,7 +6,7 @@
         </br>
         <input type="email" name="email" placeholder="Email:" required>
         </br>
-        <textarea placeholder="Sua mensagem:" required></textarea>
+        <textarea name="mensagem" placeholder="Sua mensagem:" required></textarea>
         </br>
         <input type="submit" name="envio" value="Enviar">
     </form>
