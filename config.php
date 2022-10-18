@@ -1,5 +1,5 @@
 <?php
-    define('INCLUDE_PATH','http://192.168.2.130/Projeto_Testes/');
+    define('INCLUDE_PATH','http://localhost:8082/Projeto_Testes/');
     
     $autoload = function($class){
         if($class=="Email"){
