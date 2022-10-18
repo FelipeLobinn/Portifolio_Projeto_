@@ -61,11 +61,10 @@
                     
                     $mail->isHTML(true);
                     $mail->Subject = 'Recebemos sua mensagem!';
-                    $mail->Body    = "<body style='text-align:center'><h2>Obrigado por contatar-nos!</h2><br><h4>Sua mensagem foi:</h4><br><p>$usuarioMensagem</p></body>";
-                    $mail->AltBody = "Olá, meu querido!\nTenha um bom dia!!";
+                    $mail->Body    = "<body style='text-align:center'><h2>Obrigado por contatar-nos, $usuarioNome!</h2><br><h4>Sua mensagem foi:</h4><br><p>$usuarioMensagem</p></body>";
+                    $mail->AltBody = "Obrigado por contatar-nos, $usuarioNome!\nSua mensagem foi:\n$usuarioMensagem";
 
                     $mail->send();
-                    echo '<script>alert("Mensagem Enviada!")</script>';
                 } catch (Exception $e) {
                     echo '<script>alert("Erro ao Enviar Mensagem!")</script>';
                 }
