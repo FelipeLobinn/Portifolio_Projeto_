@@ -52,6 +52,9 @@ $(function () {
 
   var delay = 5;
 
+  initSlider();
+  changeSlider();
+
   function initSlider() {
     $(".banner-image").hide();
     $(".banner-image").eq(curSlide).show();
